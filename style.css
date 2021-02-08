@@ -1,0 +1,242 @@
+body {
+  display: flex;
+  margin: 50px 20%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 25px;
+}
+
+p {
+  margin: 0.7rem;
+}
+
+.main-img {
+  width: 140px;
+}
+h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin: 2rem 0 2.6rem;
+}
+
+h2 {
+font-style: normal;
+font-weight: 500;
+font-size: 0.7rem;
+margin: 0.2rem 0 0.4rem 0.2rem;
+letter-spacing: 0.38em;
+text-transform: uppercase;
+}
+
+.white-pill {
+  background-color: white;
+  padding: 0.2rem 1.5rem;
+  border-radius: 50px;
+}
+
+.wrapper {
+  width: 600px;
+}
+
+.container {
+  display: flex;
+}
+
+.column-right {
+  width: 66.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-left {
+  width: 33.5%;
+  margin-right: 2.5rem;
+}
+
+#game {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #181818;
+    margin-bottom: 50px;
+} 
+
+.game-square {
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-color: #FFE2E2;
+  position: relative;
+  overflow: hidden; 
+}
+
+.drawer {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  transition: 400ms;
+}
+
+.drawer > div {
+  height: 50%;
+}
+
+.drawer > div:first-child {
+  background-color: #FFE2E2;
+}
+
+.flip > div {
+  top: -100%;
+}
+
+/* images for the squares */
+.square-0 {
+  background: url('./images/memory-1.png');
+  background-size: 100%
+}
+
+.square-1 {
+  background: url('./images/memory-2.png');
+  background-size: 100%
+}
+
+.square-2 {
+  background: url('./images/memory-3.png');
+  background-size: 100%
+}
+
+.square-3 {
+  background: url('./images/memory-4.png');
+  background-size: 100%
+}
+
+.square-4 {
+  background: url('./images/memory-5.png');
+  background-size: 100%
+}
+
+.square-5 {
+  background: url('./images/memory-6.png');
+  background-size: 100%
+}
+
+.square-6 {
+  background: url('./images/memory-7.png');
+  background-size: 100%
+}
+
+.square-7 {
+  background: url('./images/memory-8.png');
+  background-size: 100%
+}
+
+.square-8 {
+  background: url('./images/memory-9.png');
+  background-size: 100%
+}
+
+.square-9 {
+  background: url('./images/memory-10.png');
+  background-size: 100%
+}
+
+.square-10 {
+  background: url('./images/memory-11.png');
+  background-size: 100%
+}
+
+.square-11 {
+  background: url('./images/memory-12.png');
+  background-size: 100%
+}
+
+.square-12 {
+  background: url('./images/memory-13.png');
+  background-size: 100%
+}
+
+.square-13 {
+  background: url('./images/memory-14.png');
+  background-size: 100%
+}
+
+.square-14 {
+  background: url('./images/memory-15.png');
+  background-size: 100%
+}
+
+.square-15 {
+  background: url('./images/memory-16.png');
+  background-size: 100%
+}
+
+.square-16 {
+  background: url('./images/memory-17.png');
+  background-size: 100%
+}
+
+.square-17 {
+  background: url('./images/memory-18.png');
+  background-size: 100%
+}
+
+#game-over, #game-won {
+  display: none;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-over {
+  background-color: #181818;
+  color: #FFE2E2;
+  font-size: 2.5rem;
+}
+.game-over > .game-square {
+  display: none;
+}
+
+.game-won {
+  background-color: #FFE2E2;
+  color: #181818;
+  font-size: 2.5rem;
+}
+.game-won > .game-square {
+  display: none;
+}
+
+button {
+  background-color: #181818;
+  color: #FFECEC;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 60px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+button:hover {
+  transition: 500ms;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: #c0c0c0 2px 3px 5px;
+}
+
+.pink-container {
+  background: #FFE2E2;
+  border: 1px solid #181818;
+  box-shadow: 3px 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.radio-buttons-container {
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 0.8rem 1rem;
+}

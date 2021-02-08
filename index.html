@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div class="column-left">
+                <img class="main-img" src="./images/memory-7.png" alt="moon and a leaf image">
+                <div>
+                    <h2>time remaining</h2>
+                    <div class="pink-container">
+                        <p class="white-pill" id="timer">01:00</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>moves</h2>
+                    <div class="pink-container">
+                       <p class="white-pill" id="move-count">0</p> 
+                    </div>
+                </div>
+                <div>
+                    <h2>difficulty</h2>
+                    <div class="pink-container radio-buttons-container">
+                        <div  id="game-difficulty" action="">
+                            <input type="radio" id="easy" name="difficulty" value="easy" checked="checked">
+                            <label for="easy">easy</label><br>
+                            <input type="radio" id="hard" name="difficulty" value="hard">
+                            <label for="hard">hard</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-right">
+                <h1>Memory</h1>
+                <div id="game">
+                    <div id="game-over">
+                        <img class="main-img" src="./images/skull-end-game.png" alt="skull">
+                        <p>game over</p>
+                    </div>
+                    <div id="game-won">
+                        <img class="main-img" src="./images/memory-14.png" alt="cuppa tea">
+                        <p>you won!</p>
+                    </div>
+                </div>
+                <button id="resetBtn" class="glow-on-hover">reset game</button>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
